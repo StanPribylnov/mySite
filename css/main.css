@@ -1,0 +1,188 @@
+@font-face {
+  font-family: HelveticaNeueCyr-roman;
+  src: url(../fonts/helveticaneuecyr-roman.otf);
+}
+
+@font-face {
+  /*font-family: HelveticaNeueCyr-bold;*/
+  src: url(../fonts/helveticaneuecyr-bold.otf);
+}
+
+@font-face {
+  font-family: GothamProLight;
+  src: url(../fonts/GothamProLight.ttf);
+}
+
+@font-face {
+  font-family: HelveticaNeueCyr-Medium;
+  src: url(../fonts/HelveticaNeueCyr-Medium.otf);
+}
+
+body {
+  width: 100%;
+  min-width: 1024px;
+  margin: 0;
+  background-image: url(../images/background.jpg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.top_menu {
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  background-color: #7c1717;
+  font-family: HelveticaNeueCyr-roman;
+}
+
+.header .top_menu a {
+  margin: 0 40px;
+  color: #fff;
+}
+
+.header {
+  border-bottom: 1px solid #dedede;
+  text-align: center;
+  line-height: 133px;
+  font-family: HelveticaNeueCyr-Medium;
+}
+
+.header h1 ,
+.header a {
+  display: inline;
+  color: #5f6060;
+}
+
+.header h1 {
+  margin:0 203px 0 261px;
+  color: #c34141;
+  font-size: 62px;
+  font-family:GothamProLight;
+}
+
+.header h1::before {
+  content: 'V.I.P.';
+  color: #464848;
+  font-size: 68px;
+  font-family: HelveticaNeueCyr-bold;
+}
+
+.header .search::before ,
+.header .basket::before {
+  position: relative;
+
+}
+
+.header .search::before {
+  top: 10px;
+  content: url(../images/search.jpg);
+}
+
+.header .basket::before {
+  top: 5px;
+  right: 10px;
+  content: url(../images/basket.jpg);
+}
+
+.main_menu {
+  height: 73px;
+  margin-top: 4px;
+  text-align: center;
+  line-height: 73px;
+  font-family: HelveticaNeueCyr-bold;
+}
+
+.main_menu a {
+  display: inline-block;
+  width: 138px;
+  color: #000;
+  cursor: pointer;
+}
+
+.main_menu a:hover {
+  margin-top: -4px;
+  border-top: 4px solid red;
+  color: #c95c5c;
+}
+
+.categories {
+  height: 606px;
+  background: url(../images/background-range.jpg);
+  background-size: cover;
+  background-position-y: 10%;
+}
+
+.categories .wrapper_category {
+  width: 1001px;
+  margin: 0 auto;
+}
+
+.wrapper_category .category {
+  position: relative;
+  float: left;
+  height: 606px;
+  width: 328px;
+}
+
+.costumes {
+  background-position: -79px -63px;
+  background-image: url(../images/costumes.jpg);
+}
+
+.content  {
+  width: 350px;
+  height: 170px;
+  border-top: 5px solid red;
+  background-color: #181f29;
+  opacity: 0.9;
+  color: #fff;
+  z-index: 1;
+}
+
+.costumes .content {
+  position: absolute;
+  right: 0;
+  bottom: 88px;
+
+}
+
+.content p:first-child {
+  font-size: 24px;
+  font-family:GothamProLight;
+  font-weight: normal;
+}
+
+.content p {
+  margin-left: 32px;
+  font-family: Arial;
+}
+.shirts {
+  background-image: url(../images/la.jpg);
+  background-repeat: no-repeat;
+}
+
+.shirts .content {
+  position: absolute;
+  left: 0px;
+  top: 70px;
+}
+
+.accessories {
+  background-position-x: -216px;
+  background-image: url(../images/accessories.jpg);
+}
+
+.accessories .content {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+}
+
+.footer {
+  height: 100px;
+  margin-top: 360px;
+  background-image: url(../images/footer.jpg);
+  background-position: center;
+}
